@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyansh Raj | Official Profile</title>
+    <style>
+        /* --- General Settings --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* --- Main Card Container --- */
+        .profile-card {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* --- Header Section (Blue Top) --- */
+        .card-header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            height: 120px;
+            position: relative;
+        }
+
+        /* --- Profile Image (Circle) --- */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #eee; /* Placeholder color */
+        }
+
+        /* --- Name & Title --- */
+        .card-body {
+            padding-top: 70px; /* Space for the image */
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .class-badge {
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* --- Details Table --- */
+        .info-table {
+            width: 100%;
+            text-align: left;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        .info-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 15px;
+        }
+
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #555;
+            width: 120px; /* Fixed width for labels */
+        }
+
+        .value {
+            color: #333;
+        }
+
+        /* --- Footer Button --- */
+        .card-footer {
+            background: #f9f9f9;
+            padding: 20px;
+        }
+
+        .btn-contact {
+            background: #25d366; /* WhatsApp Green */
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(37, 211, 102, 0.3);
+            transition: 0.3s;
+        }
+
+        .btn-contact:hover {
+            background: #1da851;
+            transform: translateY(-2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="card-header">
+            <div class="profile-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Reyansh Raj">
+            </div>
+        </div>
+
+        <div class="card-body">
+            <h1 class="name">Reyansh Raj</h1>
+            <span class="class-badge">Class 2 Student</span>
+
+            <table class="info-table">
+                <tr>
+                    <td class="label">Father's Name</td>
+                    <td class="value">Mr. Amit Kumar</td>
+                </tr>
+                <tr>
+                    <td class="label">Mother's Name</td>
+                    <td class="value">Mrs. Rani Devi</td>
+                </tr>
+                <tr>
+                    <td class="label">Village (Gram)</td>
+                    <td class="value">Gadhbanni</td>
+                </tr>
+                <tr>
+                    <td class="label">Post Office</td>
+                    <td class="value">Hathvan</td>
+                </tr>
+                <tr>
+                    <td class="label">Police Station</td>
+                    <td class="value">Alouli</td>
+                </tr>
+                <tr>
+                    <td class="label">District</td>
+                    <td class="value">Khagaria</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card-footer">
+            <a href="#" class="btn-contact">Contact Student</a>
+        </div>
+    </div>
+
+</body>
+</html>
